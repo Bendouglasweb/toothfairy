@@ -1,0 +1,25 @@
+<template name="postItemDetailed">
+  <div class="post {{status}}">
+    <div class="post-content">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">{{upper}}</div>
+			<div class="col-md-3">{{lower}}</div>
+			<div class="col-md-3">{{posterior}}</div>
+		</div>
+		<br><br><br>
+		<div class="row">
+			<div class="col-md-12">Order currently marked as: <b>{{status}}</b></div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-2"><input type="submit" value="Mark as complete" class="btn btn-primary mark_c"/></div>
+			<div class="col-md-2"><input type="submit" value="Mark as in progress" class="btn btn-primary mark_i"/></div>
+			<div class="col-md-2"><input type="submit" value="Mark as not started" class="btn btn-primary mark_n"/></div>
+			
+
+		</div>
+    	</div>
+    </div>
+  </div>
+</template>

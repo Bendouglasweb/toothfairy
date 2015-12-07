@@ -1,3 +1,18 @@
+.notcomplete {
+	background-color: #ffece6 !important;
+}
+
+.inprogress {
+
+	background-color: #ffffa6 !important;
+}
+
+.complete {
+
+	background-color: #b3ffb3 !important;
+}
+
+
 .grid-block, .main, .post, .comments li, .comment-form {
   background: #fff;
   border-radius: 3px;

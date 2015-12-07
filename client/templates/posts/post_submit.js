@@ -8,6 +8,6 @@ Template.postSubmit.events({
     };
 
     Tickets.insert(post);
-    //Router.go('thanks', post);
+    Router.go('thanks', post);
   }
 });

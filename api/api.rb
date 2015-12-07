@@ -24,7 +24,12 @@ get '/new/:key/:upper/:lower/:posterior' do
 		
 		content_type :json
 		db = settings.mongo_db
-		db.insert_one({:upper=>params[:upper],:lower=>params[:lower],:posterior=>params[:posterior],:pid=>(Time.new.to_i.to_s + Random.rand(1..1000).to_s)})
+		db.insert_one({	:upper=>params[:upper],
+				:lower=>params[:lower],
+				:posterior=>params[:posterior],
+				:pid=>(Time.new.to_i.to_s + Random.rand(1..1000).to_s),
+				:status=>"notcomplete"
+				})
 		
 		db = settings.log_db	
 		db.insert_one({:request_time=>Time.now.to_s,:request_ip=>request.ip,:auth=>"true",:upper=>params[:upper],:lower=>params[:lower],:posterior=>params[:posterior]})
