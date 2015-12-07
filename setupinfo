@@ -1,0 +1,5 @@
+The following commands should be ran on the meteor isntall
+
+meteor remove autopublish
+meteor add twbs:bootstrap
+meteor add iron:router
